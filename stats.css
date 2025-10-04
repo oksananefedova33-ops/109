@@ -1,0 +1,29 @@
+/* ui/stats/stats.css */
+.st-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:9998}
+.st-overlay.active{display:block}
+.st-modal{position:fixed;inset:6% 8% auto 8%;background:#0e141b;color:#e6edf3;border:1px solid #223043;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5);z-index:9999;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'}
+.st-modal__header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #223043;background:#0b1117}
+.st-modal__title{font-weight:600;font-size:16px}
+.st-close{background:transparent;border:none;font-size:22px;color:#9fb3c8;cursor:pointer;line-height:1}
+.st-close:hover{color:#e6edf3}
+.st-modal__body{padding:12px 16px 20px;overflow:auto}
+.st-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.st-row+.st-row{margin-top:12px}
+.st-badge{background:#1b2431;border:1px solid #223043;padding:6px 10px;border-radius:8px;font-size:12px;color:#9fb3c8}
+.st-grid{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:12px;margin-top:10px}
+@media (max-width:1200px){.st-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.st-grid{grid-template-columns:1fr}}
+.st-card{background:#0b1117;border:1px solid #223043;border-radius:10px;padding:12px}
+.st-card h4{margin:0 0 8px 0;font-size:14px;font-weight:600;color:#e6edf3}
+.st-card .st-num{font-size:28px;font-weight:700;letter-spacing:.3px;margin:4px 0 0}
+.st-card small{color:#9fb3c8}
+.st-tabs{display:flex;gap:8px;border-bottom:1px solid #223043;margin-top:10px}
+.st-tab{padding:8px 12px;border:1px solid #223043;border-bottom:none;border-radius:8px 8px 0 0;background:#0b1117;color:#9fb3c8;cursor:pointer}
+.st-tab.active{background:#121a24;color:#e6edf3}
+.st-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+.st-table th,.st-table td{border-bottom:1px solid #223043;padding:8px 10px;text-align:left;vertical-align:top}
+.st-table th{color:#9fb3c8;font-weight:600}
+.st-table tr:hover td{background:#0f1722}
+.st-right{margin-left:auto}
+.st-input{background:#0f1722;color:#e6edf3;border:1px solid #223043;border-radius:8px;padding:8px 10px}
+.st-note{color:#9fb3c8;font-size:12px}
